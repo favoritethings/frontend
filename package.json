@@ -1,15 +1,21 @@
 {
-  "name": "favoritethings",
+  "name": "mmm",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev:admin": "turbo run dev --scope=\"@mmm/admin\"",
+    "dev:client": "turbo run dev --scope=\"@mmm/client\"",
+    "dev": "turbo run dev --scope=\"@mmm/client\"",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@mmm/config": "workspace:*",
+    "@mmm/tsconfig": "workspace:*",
     "prettier": "^3.1.0",
     "turbo": "latest"
   },
