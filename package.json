@@ -1,5 +1,5 @@
 {
-  "name": "mmm",
+  "name": "heartplace",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -7,15 +7,15 @@
   ],
   "scripts": {
     "build": "turbo build",
-    "dev:admin": "turbo run dev --scope=\"@mmm/admin\"",
-    "dev:client": "turbo run dev --scope=\"@mmm/client\"",
-    "dev": "turbo run dev --scope=\"@mmm/client\"",
+    "dev:admin": "turbo run dev --scope=\"@heartplace/admin\"",
+    "dev:client": "turbo run dev --scope=\"@heartplace/client\"",
+    "dev": "turbo run dev --scope=\"@heartplace/client\"",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@mmm/config": "workspace:*",
-    "@mmm/tsconfig": "workspace:*",
+    "@heartplace/config": "workspace:*",
+    "@heartplace/tsconfig": "workspace:*",
     "prettier": "^3.1.0",
     "turbo": "latest"
   },
