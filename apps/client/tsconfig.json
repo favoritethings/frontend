@@ -1,5 +1,5 @@
 {
-  "extends": "@mmm/tsconfig/nextsj.json",
+  "extends": "@heartplace/tsconfig/nextjs.json",
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
