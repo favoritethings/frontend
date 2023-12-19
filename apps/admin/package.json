@@ -1,5 +1,5 @@
 {
-  "name": "@mmm/admin",
+  "name": "@heartplace/admin",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,14 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@mmm/ui": "workspace:*",
+    "@heartplace/ui": "workspace:*",
     "react": "^18",
     "react-dom": "^18",
     "next": "14.0.3"
   },
   "devDependencies": {
-    "@mmm/config": "workspace:*",
-    "@mmm/tsconfig": "workspace:*",
+    "@heartplace/config": "workspace:*",
+    "@heartplace/tsconfig": "workspace:*",
     "@types/eslint": "^8.44.7",
     "@types/node": "^20",
     "@types/react": "^18",
