@@ -8,10 +8,10 @@ importers:
 
   .:
     devDependencies:
-      '@mmm/config':
+      '@heartplace/config':
         specifier: workspace:*
         version: link:packages/config
-      '@mmm/tsconfig':
+      '@heartplace/tsconfig':
         specifier: workspace:*
         version: link:packages/tsconfig
       prettier:
@@ -23,7 +23,7 @@ importers:
 
   apps/admin:
     dependencies:
-      '@mmm/ui':
+      '@heartplace/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -36,10 +36,10 @@ importers:
         specifier: ^18
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@mmm/config':
+      '@heartplace/config':
         specifier: workspace:*
         version: link:../../packages/config
-      '@mmm/tsconfig':
+      '@heartplace/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
       '@types/eslint':
@@ -72,7 +72,7 @@ importers:
 
   apps/client:
     dependencies:
-      '@mmm/ui':
+      '@heartplace/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -85,10 +85,10 @@ importers:
         specifier: ^18
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@mmm/config':
+      '@heartplace/config':
         specifier: workspace:*
         version: link:../../packages/config
-      '@mmm/tsconfig':
+      '@heartplace/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
       '@types/eslint':
@@ -147,10 +147,10 @@ importers:
 
   packages/ui:
     devDependencies:
-      '@mmm/config':
+      '@heartplace/config':
         specifier: workspace:*
         version: link:../config
-      '@mmm/tsconfig':
+      '@heartplace/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
       '@turbo/gen':
