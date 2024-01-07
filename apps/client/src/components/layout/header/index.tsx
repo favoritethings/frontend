@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="h-[100px] flex justify-center items-center ">
+    <header className="h-[100px] flex justify-center items-center ">
       <div className="flex justify-between max-w-[1200px] min-w-[320px]">
         <Link
           href="/"
@@ -18,6 +18,6 @@ export default function Navbar() {
           <button>회원가입</button>
         </div>
       </div>
-    </nav>
+    </header>
   );
 }
