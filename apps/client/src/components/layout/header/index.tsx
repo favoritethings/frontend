@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Navbar() {
+export default function Header() {
   return (
     <header className="h-[100px] flex justify-center items-center ">
       <div className="flex justify-between max-w-[1200px] min-w-[320px]">
