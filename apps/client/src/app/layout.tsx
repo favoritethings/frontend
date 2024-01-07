@@ -39,11 +39,16 @@ export const metadata: Metadata = {
   description: 'welcome to mmm client',
 };
 
+export default function RootLayout(props: {
+  children: React.ReactNode;
+  modal: React.ReactNode;
+}) {
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${spoqa.variable} font-spoqa`}>
       <body>
         {props.children}
+        {props.modal}
         <div id="portal-root" />
       </body>
     </html>
