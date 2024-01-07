@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Nav from './nav';
 
 export default function Header() {
   return (
@@ -10,9 +11,7 @@ export default function Header() {
         >
           Heart Place
         </Link>
-        <div className="w-[870px] px-[48px] flex gap-[24px] text-[16px] font-[500] text-[#837c7d] tracking-[-0.48px] leading-[180%]">
-          <button>코스 짜기</button>
-        </div>
+        <Nav />
         <div className="flex gap-[24px] text-[16px] font-[500] text-[#b3b2b1] tracking-[-0.48px] leading-[180%]">
           <button>로그인</button>
           <button>회원가입</button>
