@@ -43,6 +43,7 @@ export default function RootLayout(props: {
   children: React.ReactNode;
   modal: React.ReactNode;
 }) {
+export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${spoqa.variable} font-spoqa`}>
       <body>
