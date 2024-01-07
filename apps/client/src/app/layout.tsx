@@ -1,6 +1,7 @@
 import localFont from 'next/font/local';
 import '@/app/globals.css';
 import type { Metadata } from 'next';
+import Navbar from '@/components/layout/navbar';
 
 const spoqa = localFont({
   src: [
@@ -35,8 +36,8 @@ const spoqa = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'mmm',
-  description: 'welcome to mmm client',
+  title: 'Heart Place',
+  description: 'welcome to Heart Place client',
 };
 
 export default function RootLayout(props: {
@@ -44,8 +45,9 @@ export default function RootLayout(props: {
   modal: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${spoqa.variable} font-spoqa`}>
+    <html lang="ko" className={`${spoqa.variable} font-spoqa`}>
       <body>
+        <Navbar />
         {props.children}
         {props.modal}
         <div id="portal-root" />
