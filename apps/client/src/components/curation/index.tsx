@@ -1,6 +1,6 @@
 import React from 'react';
-import CurationHeader from './header/page';
-import CurationCard from './card/page';
+import CurationHeader from './header';
+import CurationCard from './card';
 
 const Curation = () => {
   return (
