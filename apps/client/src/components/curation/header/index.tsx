@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CurationHeader = () => {
   return (
     <div className="flex justify-between p-[16px]">
