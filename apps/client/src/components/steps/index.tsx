@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { Children, useState } from 'react';
+import { Children, useState } from "react";
 
 interface StepsProps {
   activeStep?: number;
@@ -32,7 +32,7 @@ const Steps = ({ activeStep = 0, className, children }: StepsProps) => {
   return (
     <div className={className}>
       {Children.toArray(
-        children({ step, onHandleNext, onHandlePrev, onHandleReset })
+        children({ step, onHandleNext, onHandlePrev, onHandleReset }),
       ).filter((_, index) => index === step)}
     </div>
   );
