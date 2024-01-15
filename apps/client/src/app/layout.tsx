@@ -2,6 +2,7 @@ import localFont from 'next/font/local';
 import '@/app/globals.css';
 import type { Metadata } from 'next';
 import Header from '@/components/layout/header';
+import Footer from '@/components/layout/footer';
 
 const spoqa = localFont({
   src: [
@@ -51,6 +52,7 @@ export default function RootLayout(props: {
         {props.children}
         {props.modal}
         <div id="portal-root" />
+        <Footer />
       </body>
     </html>
   );
