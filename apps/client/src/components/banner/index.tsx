@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <aside className="w-full h-[845px] flex flex-col p-[60px] bg-[#000] text-[#fff] gap-[48px]">
+    <aside className="flex h-[845px] w-full flex-col gap-[48px] bg-[#000] p-[60px] text-[#fff]">
       <div className="h-[513px] text-center">image</div>
       <div className="flex flex-col text-center">
         <p className="text-[41px] font-[400] leading-[160%] tracking-[-1.23px]">

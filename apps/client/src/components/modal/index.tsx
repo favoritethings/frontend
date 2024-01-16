@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect, useRef, MouseEventHandler } from 'react';
-import { useRouter } from 'next/navigation';
-import { createPortal } from 'react-dom';
+import { useEffect, useRef, MouseEventHandler } from "react";
+import { useRouter } from "next/navigation";
+import { createPortal } from "react-dom";
 
 /**
  * @description
@@ -32,7 +32,7 @@ const Modal = ({ children }: { children: React.ReactNode }) => {
         ref={dialogRef}
         onClick={onClick}
         onClose={onDismiss}
-        className="flex flex-col backdrop:bg-black/50 max-w-[720px] w-full pt-[16px] pb-[64px] px-[15px]"
+        className="flex w-full max-w-[720px] flex-col px-[15px] pb-[64px] pt-[16px] backdrop:bg-black/50"
       >
         <div className="flex justify-end">
           <button onClick={onDismiss}>
@@ -66,7 +66,7 @@ const Modal = ({ children }: { children: React.ReactNode }) => {
         {children}
       </dialog>
     </div>,
-    document.getElementById('portal-root')!
+    document.getElementById("portal-root")!,
   );
 };
 

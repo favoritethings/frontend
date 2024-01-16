@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@heartplace/ui": "workspace:*",
+    "next": "14.0.3",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.3"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@heartplace/config": "workspace:*",
@@ -22,9 +24,9 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
     "postcss": "^8",
-    "typescript": "^5",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8"
+    "typescript": "^5"
   }
 }
