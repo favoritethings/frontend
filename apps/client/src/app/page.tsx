@@ -1,3 +1,11 @@
+import Banner from "@/components/banner";
+import Curation from "@/components/curation";
+
 export default function Home() {
-  return <main>{/* <h1>welcome to heart place client</h1> */}</main>;
+  return (
+    <main>
+      <Banner />
+      <Curation />
+    </main>
+  );
 }
