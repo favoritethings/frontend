@@ -4,7 +4,7 @@ import CurationCard from "./card";
 
 const Curation = () => {
   return (
-    <div className="mx-auto w-[1200px]">
+    <div className="mx-auto mb-[120px] w-[1200px]">
       <CurationHeader />
       <CurationCard />
     </div>
