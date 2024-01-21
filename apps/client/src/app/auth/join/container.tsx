@@ -12,8 +12,8 @@ const JoinContainer = () => {
         {({ onHandleNext }) => {
           return [
             <div className="flex flex-col items-center">
-              <div className="pb-[52px] w-[420px] flex flex-col gap-y-3.5">
-                <h1 className="font-bold text-[24px] leading-[160%] tracking-[-0.72px] whitespace-pre-wrap pb-[18px]">
+              <div className="flex w-[420px] flex-col gap-y-3.5 pb-[52px]">
+                <h1 className="whitespace-pre-wrap pb-[18px] text-[24px] font-bold leading-[160%] tracking-[-0.72px]">
                   {`하트플레이스 이용에\n필요한 정보를 입력해주세요.`}
                 </h1>
                 <Form.Label text="이름" htmlFor="name">
@@ -32,6 +32,14 @@ const JoinContainer = () => {
                     required
                   />
                 </Form.Label>
+                <Form.Label text="이메일" htmlFor="email">
+                  <Form.Input
+                    id="email"
+                    type="email"
+                    placeholder="user@gmail.com"
+                    required
+                  />
+                </Form.Label>
                 <Form.Label text="패스워드" htmlFor="password">
                   <Form.Input
                     id="password"
@@ -42,15 +50,15 @@ const JoinContainer = () => {
                 </Form.Label>
               </div>
               <button
-                className="bg-black text-white w-[240px] py-2"
+                className="w-[240px] bg-black py-2 text-white"
                 onClick={onHandleNext}
               >
                 모두 입력하고 다음으로
               </button>
             </div>,
             <div className="flex flex-col items-center">
-              <div className="pb-[52px] w-[420px] flex flex-col gap-y-3.5">
-                <h1 className="font-bold text-[24px] leading-[160%] tracking-[-0.72px] whitespace-pre-wrap pb-[18px]">
+              <div className="flex w-[420px] flex-col gap-y-3.5 pb-[52px]">
+                <h1 className="whitespace-pre-wrap pb-[18px] text-[24px] font-bold leading-[160%] tracking-[-0.72px]">
                   {`@@@님, 아래 정보를 입력하면\n더 정확한 추천을 받을 수 있습니다.`}
                 </h1>
                 <Form.Label text="닉네임" htmlFor="nickname">
@@ -80,7 +88,7 @@ const JoinContainer = () => {
                 </Form.Label>
               </div>
               <button
-                className="bg-black text-white w-[240px] py-2"
+                className="w-[240px] bg-black py-2 text-white"
                 onClick={onHandleNext}
               >
                 스킵하고 가입 완료하기
