@@ -1,9 +1,10 @@
+import LoginContainer from '@/app/auth/login/container';
 import Modal from '@/components/modal';
 
 const LoginModal = () => {
   return (
     <Modal>
-      <h1>Login Modal</h1>
+      <LoginContainer />
     </Modal>
   );
 };
