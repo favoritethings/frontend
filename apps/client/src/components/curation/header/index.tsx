@@ -1,9 +1,8 @@
-const CurationHeader = () => {
+const CurationHeader = ({ title }: { title: string }) => {
   return (
     <div className="flex justify-between p-[16px]">
       <div className="text-[41px] font-[700] leading-[160%] tracking-[-1.23px] text-[#1C1718]">
-        <p>비가 오는 주말엔</p>
-        <p>차분한 카페를 추천해요.</p>
+        {title}
       </div>
       <button className="flex h-[48px] w-[48px] items-center justify-center rounded-full">
         <svg
