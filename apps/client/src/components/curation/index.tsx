@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import CurationHeader from "./header";
 import CurationCard from "./card";
 
