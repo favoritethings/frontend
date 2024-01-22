@@ -86,6 +86,9 @@ const JoinContainer = () => {
                     required
                   />
                 </Form.Label>
+                <Form.Label text="커플여부">
+                  <Form.Input type="checkbox" id="couple" />
+                </Form.Label>
               </div>
               <button
                 className="w-[240px] bg-black py-2 text-white"
