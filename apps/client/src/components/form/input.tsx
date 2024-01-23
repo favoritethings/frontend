@@ -1,7 +1,8 @@
 import { type InputHTMLAttributes, useState, useEffect, useRef } from 'react';
+import Checkbox from '@/components/form/checkbox';
 
 export type InputProps = InputHTMLAttributes<HTMLInputElement> & {
-  callback?: (value: string) => void;
+  callback?: (value: string | boolean) => void;
 };
 
 const Tel = (props: InputProps) => {
@@ -89,6 +90,8 @@ const Input = (props: InputProps) => {
   switch (props.type) {
     case 'tel':
       return <Tel {...props} />;
+    case 'checkbox':
+      return <Checkbox {...props} />;
     default:
       return <Default {...props} />;
   }
