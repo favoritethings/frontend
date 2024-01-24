@@ -4,24 +4,25 @@ import Form from '@/components/form';
 import Label from '@/components/form/label';
 import kakao from '../../../../public/images/kakao.png';
 import Image from 'next/image';
+import { login } from '@/app/api/member/action';
 
 const LoginContainer = () => {
   return (
-    <form className="flex flex-col items-center">
+    <form action={login} className="flex flex-col items-center">
       <div className="flex w-[300px] flex-col items-center gap-[48px]">
         <h1 className="whitespace-pre-wrap text-[24px] font-bold leading-[160%] tracking-[-0.72px]">
           {`장소를 저장하려면\n로그인이 필요해요.`}
         </h1>
         <div className="flex w-full flex-col gap-4">
           <Label id="email" text="이메일">
-            <Form.Input id="email" type="email" />
+            <Form.Input id="email" type="email" name="email" required />
           </Label>
           <Label id="password" text="패스워드">
-            <Form.Input id="password" type="password" />
+            <Form.Input id="password" type="password" name="password" required />
           </Label>
         </div>
         <div className="flex w-full flex-col gap-3">
-          <button className="w-full bg-black py-2">
+          <button className="w-full bg-black py-2" type="submit">
             <span className="text-[16px] leading-[180%] tracking-[-0.48px] text-white">
               로그인하기
             </span>
