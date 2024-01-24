@@ -2,7 +2,7 @@
 
 import { redirect } from 'next/navigation';
 
-const join = async (formData: FormData) => {
+const login = async (formData: FormData) => {
   const email = formData.get("email");
   const password = formData.get("password");
 
@@ -18,4 +18,4 @@ const join = async (formData: FormData) => {
   redirect("/");
 }
 
-export { join }
+export { login }

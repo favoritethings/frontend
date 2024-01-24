@@ -4,11 +4,11 @@ import Form from '@/components/form';
 import Label from '@/components/form/label';
 import kakao from '../../../../public/images/kakao.png';
 import Image from 'next/image';
-import { join } from '@/app/api/member/action';
+import { login } from '@/app/api/member/action';
 
 const LoginContainer = () => {
   return (
-    <form action={join} className="flex flex-col items-center">
+    <form action={login} className="flex flex-col items-center">
       <div className="flex w-[300px] flex-col items-center gap-[48px]">
         <h1 className="whitespace-pre-wrap text-[24px] font-bold leading-[160%] tracking-[-0.72px]">
           {`장소를 저장하려면\n로그인이 필요해요.`}
